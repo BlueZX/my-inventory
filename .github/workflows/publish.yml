@@ -29,11 +29,11 @@ jobs:
         with:
           static_site_generator: next
 
-      - name: Esperar 10 segundos ⏳
-        run: sleep 10
-
       - name: Build with Next.js 🏗️
         run: npm run build
+
+      - name: Esperar 10 segundos ⏳
+        run: sleep 10
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
